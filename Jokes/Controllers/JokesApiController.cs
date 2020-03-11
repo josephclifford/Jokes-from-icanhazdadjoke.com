@@ -80,6 +80,7 @@ namespace Jokes.Controllers
         /// <param name="term"></param>
         /// <returns>
         /// Brings back an HTML bulleted list categorized into groups based on the word sizes in the jokes.
+        /// The words found in the text are highlighted yellow.
         /// The default groups are; Short (<10 words), Medium (<20 words), Long (>= 20 words).
         /// These can be changed by passing in your own FilterCategories after the term param.
         /// </returns>
