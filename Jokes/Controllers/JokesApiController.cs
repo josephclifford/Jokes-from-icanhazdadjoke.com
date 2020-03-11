@@ -67,7 +67,7 @@ namespace Jokes.Controllers
         [Route("jokesapi/search-return-json")]
         public ActionResult SearchReturnJson(string term)
         {
-            return Ok(new GetJokes().SearchReturnJason(_httpClientFactory.CreateClient("icanhazdadjokeSearch"), term, 30));
+            return Ok(new GetJokes().SearchReturnJason(_httpClientFactory.CreateClient("icanhazdadjokeSearch"), term));
         }
 
         /// <summary>
