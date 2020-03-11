@@ -1,0 +1,52 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="row">
+    <h2>Get joke results from icanhazdadjoke.com</h2>
+</div>
+
+<div class="row">
+    <div class="col-sm-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Get a random joke by pressing the button below.
+            </div>
+            <div class="panel-body">
+                <div class="form-group">
+                    <input type="button" id="RandomButton" value="Get Random Joke">
+                </div>
+                <div id="RandomResults">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Search for a joke by filling out the text box below and pressing the button.               
+            </div>
+            <div class="panel-body">
+                <div class="form-group">
+                    <div>
+                        <input type="text" id="SearchText" />
+                    </div>
+                    <div style="margin-top: 15px;">
+                        <input type="button" id="SearchButton" value="Search for Joke">
+                        <label style="font-size: 12px;">
+                            * Search for multiple words by putting spaces between words.
+                              Returns a max of 30 jokes. Case insensitive.
+                        </label>
+                    </div>
+                </div>
+                <div id="SearchResults">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
