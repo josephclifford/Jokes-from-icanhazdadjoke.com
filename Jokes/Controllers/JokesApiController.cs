@@ -75,7 +75,7 @@ namespace Jokes.Controllers
         /// Case insensitive. Multiple words can be used if seperated by at least one space.
         /// </summary>
         /// <example>
-        /// http://localhost:61970/jokesapi/search-return-json?term=dad
+        /// http://localhost:61970/jokesapi/search-return-html?term=dad
         /// </example>
         /// <param name="term"></param>
         /// <returns>
@@ -84,7 +84,6 @@ namespace Jokes.Controllers
         /// These can be changed by passing in your own FilterCategories after the term param.
         /// </returns>
         [HttpGet]
-        // jokesapi/search-return-html?term=dad
         [Route("jokesapi/search-return-html")]
         public ActionResult SearchReturnHtml(string term)
         {
