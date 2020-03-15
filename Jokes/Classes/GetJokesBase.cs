@@ -9,10 +9,14 @@ using Newtonsoft.Json;
 
 namespace Jokes.Classes
 {
+    /// <summary>
+    /// This is the base class for the consuming of the joke APIs and packaging the returned data.
+    /// </summary>
     public abstract class GetJokesBase: IGetJokes
     {
+       
         /// <summary>
-        /// This is the base class for the consuming of the joke APIs and packaging the returned data.
+        /// Default filter categories
         /// </summary>
         public virtual IEnumerable<IFilterCategory> FilterCategories
         {
